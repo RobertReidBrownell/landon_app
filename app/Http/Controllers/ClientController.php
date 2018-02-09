@@ -31,23 +31,6 @@ class ClientController extends Controller {
 		header('Content-Disposition: attachment; filename=export.xls');
 		return view('client/export', $data);
 	}
-//		$obj = new \stdClass;
-//		$obj->id = 1;
-//		$obj->title = 'mr';
-//		$obj->name = 'john';
-//		$obj->last_name = 'doe';
-//		$obj->email = 'john@domain.com';
-//		$data['clients'][] = $obj;
-//
-//		$obj = new \stdClass;
-//		$obj->id = 2;
-//		$obj->title = 'ms';
-//		$obj->name = 'jane';
-//		$obj->last_name = 'doe';
-//		$obj->email = 'jane@another-domain.com';
-//		$data['clients'][] = $obj;
-
-
 
 	public function newClient( Request $request, Client $client)  {
 		$data = [];
@@ -158,3 +141,19 @@ class ClientController extends Controller {
 		return view('client/form', $data);
 	}
 }
+
+//		$obj = new \stdClass;
+//		$obj->id = 1;
+//		$obj->title = 'mr';
+//		$obj->name = 'john';
+//		$obj->last_name = 'doe';
+//		$obj->email = 'john@domain.com';
+//		$data['clients'][] = $obj;
+//
+//		$obj = new \stdClass;
+//		$obj->id = 2;
+//		$obj->title = 'ms';
+//		$obj->name = 'jane';
+//		$obj->last_name = 'doe';
+//		$obj->email = 'jane@another-domain.com';
+//		$data['clients'][] = $obj;
